@@ -1,0 +1,6 @@
+{
+  "name": "EsriMap",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./EsriMap.js"
+}
