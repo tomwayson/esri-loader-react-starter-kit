@@ -1,6 +1,6 @@
 # esri-loader-react-starter-kit
 
-A fork of the react-starter-kit showing how to use esri-loader to render an ArcGIS map component in a route.
+A fork of the react-starter-kit showing how to use [esri-loader](https://github.com/Esri/esri-loader) to render an ArcGIS map component in a route.
 
 This fork adds an `<EsriMap />` component that lazy loads the [ArcGIS API for JavaScript](https://developers.arcgis.com/javascript/) and renders a simple map only once the user navigates to the `/map` route in a browser. By using the `componentDidMount()` lifecyle hook, the `<EsriMap />` component ensures that the ArcGIS API and it's modules aren't loaded or used when rendering on the server.
 
