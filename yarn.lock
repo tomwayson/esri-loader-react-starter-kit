@@ -2854,9 +2854,9 @@ esrecurse@^4.1.0:
     estraverse "^4.1.0"
     object-assign "^4.0.1"
 
-esri-loader@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/esri-loader/-/esri-loader-1.6.0.tgz#37acc09fbb6e69aa09b9767f237cb24cd3f6c5ad"
+esri-loader@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/esri-loader/-/esri-loader-2.0.0.tgz#91fdf91c8820df07f0433c6b60f7ff7fcdbd397a"
 
 estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
   version "4.2.0"
