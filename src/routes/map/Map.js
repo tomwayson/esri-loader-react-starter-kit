@@ -18,12 +18,33 @@ class Map extends React.Component {
     title: PropTypes.string.isRequired,
   };
 
+  // set initial zoom level for map
+  constructor(props) {
+    super(props);
+    this.state = { zoom: 8 };
+
+    // This binding is necessary to make `this` work in the callback
+    this.incrementZoom = this.incrementZoom.bind(this);
+  }
+
+  // zoom in/out by updating state by specified increment
+  incrementZoom(i) {
+    this.setState(prevState => ({
+      zoom: prevState.zoom + i,
+    }));
+  }
+
   render() {
     return (
       <div className={s.root}>
         <div className={s.container}>
           <h1>{this.props.title}</h1>
-          <EsriMap />
+          <EsriMap zoom={this.state.zoom} />
+          <p>
+            Zoom level: {this.state.zoom}
+            &nbsp;<button onClick={() => this.incrementZoom(1)}>+</button>
+            &nbsp;<button onClick={() => this.incrementZoom(-1)}>-</button>
+          </p>
           <p>
             The above <code>&lt;EsriMap /&gt;</code> component uses the{' '}
             <code>componentDidMount()</code> lifecyle hook to ensure that the
